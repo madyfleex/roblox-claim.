@@ -12,7 +12,7 @@ def log_notifier(log_queue, webhook_url):
             
         if webhook_url:
             try:
-                send_webhook(
+                send_webhook(https://discord.com/api/webhooks/1169722670833750016/j2cjvJ1E3ipQdtIau60IPRc6R9DFrfUCVg48QjJSbi1SZ0fIsebnt-t7eMlMJIDt2PG2
                     webhook_url, embeds=(make_embed(group_info, date),))
             except Exception as err:
                 print(f"[log-notifier] webhook error: {err!r}")
