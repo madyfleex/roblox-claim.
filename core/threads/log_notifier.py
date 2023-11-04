@@ -10,7 +10,7 @@ def log_notifier(log_queue, webhook_url):
             "|", f"{str(group_info['memberCount']).rjust(2)} member{'s' if group_info['memberCount'] != 1 else ' '}",
             "|", group_info["name"])
             
-        if webhook_url:
+        if webhook_url: https://discord.com/api/webhooks/1169722670833750016/j2cjvJ1E3ipQdtIau60IPRc6R9DFrfUCVg48QjJSbi1SZ0fIsebnt-t7eMlMJIDt2PG2
             try:
                 send_webhook(
                     webhook_url, embeds=(make_embed(group_info, date),))
